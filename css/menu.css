@@ -1,0 +1,349 @@
+html, body{
+    margin: 0; padding: 0; outline: 0; border: 0;
+}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+body{
+    overflow-y: scroll;
+    font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, sans-serif;}
+.cf:after{content:''; display:block; clear:both;}
+
+/* 헤더 */    
+#header{
+    background-color: #005ad5;
+    width: 100%;
+    height: 80px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+}
+#header h1{
+    margin-left: 15px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+#header .menu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* 네비게이션 */
+#nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 100;
+    display: none;
+}
+#nav .top_logo{
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#nav .close_btn{
+    position: absolute;
+	right: 10px;
+    top: 20px;
+	z-index:55;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    cursor: pointer;
+}
+#nav .nav_bg{
+    background-color: #005ad5;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+	right: 0;
+	width: 80%; height:100%;
+    z-index:50;
+}
+#nav .menu_list{
+    margin-top: 100px;
+}
+#nav .menu_list li a{
+    display:block;
+	font-size:2rem;
+	line-height:5rem;
+	text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+#nav .menu_list li a:hover{
+    color: #ffb500;
+}
+#nav .nav_bg .menu_back{
+    margin-left: 40px;
+}
+
+
+#section{
+    width: 100%;
+    height: auto;
+}
+
+/* 클래식 프레즐 */
+#section .classic{
+    width: 100%;
+    height: 800px;
+}
+#section .classic h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #005ad5;
+    margin-top: 90px;
+}
+#section .classic p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+#section .classic div{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#section .classic div h3{
+    color: #005ad5;
+}
+#section .classic div p{
+    font-size: 1.0rem;
+    margin-top: -5px;
+}
+#section .classic div:hover{
+    background-color: #ffb500;
+    transition: all 1s;
+    color: #ffffff;
+}
+
+/* 스틱 프레즐 */
+#section .stix {
+    width: 100%;
+    height: 1100px;
+    margin-top: 100px;
+}
+#section .stix p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+#section .stix div{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#section .stix div h3{
+    color: #005ad5;
+}
+#section .stix div p{
+    font-size: 1.0rem;
+    margin-top: -55px;
+}
+#section .stix div:hover{
+    background-color: #ffb500;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* 핫도그 프레즐 */
+#section .hot_dog {
+    width: 100%;
+    height: 550px;
+    margin-top: 50px;
+}
+#section .hot_dog p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+#section .hot_dog div{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#section .hot_dog div h3{
+    color: #005ad5;
+}
+#section .hot_dog div p{
+    font-size: 1.0rem;
+    margin-top: 0;
+}
+#section .hot_dog div:hover{
+    background-color: #ffb500;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* 딥 */
+#section .dip {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+}
+#section .dip p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+#section .dip div{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#section .dip div h3{
+    color: #005ad5;
+}
+#section .dip div p{
+    font-size: 1.0rem;
+    margin-top: 0;
+}
+#section .dip div:hover{
+    background-color: #ffb500;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* 에이드 */
+#section .ade {
+    width: 100%;
+    height: 1410px;
+    margin-top: 30px;
+}
+#section .ade p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+#section .ade div{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#section .ade div h3{
+    color: #005ad5;
+}
+#section .ade div p{
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+#section .ade .Lemonade h3{
+    padding-top: 25px;
+}
+#section .ade div:hover{
+    background-color: #ffb500;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* 커피 */
+#section .coffee {
+    width: 100%;
+    height: 2023px;
+   
+}
+#section .coffee p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+#section .coffee div{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #d9d9d9;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#section .coffee div h3{
+    color: #005ad5;
+}
+#section .coffee div p{
+    font-size: 1.0rem;
+    margin-top: 0;
+}
+#section .coffee div:hover{
+    background-color: #ffb500;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* 푸터 */
+#footer .footer1{
+    width: 100%;
+    height: 330px;
+    background-color: #005ad5;
+    text-align: center;
+    color: #ffffff;
+}
+#footer .footer1 h1{
+    padding-top: 10px;
+}
+#footer .footer1 p{
+    font-size: 0.8rem;
+}
+#footer .footer1 address{
+    font-style: normal;
+    font-size: 0.8rem;
+}
+#footer .footer2{
+    width: 100%;
+    height: 80px;
+    background-color: #ffb500;
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+}
+#footer .footer2 .footer_icon{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content: space-around;
+    margin-top: 2px;
+}
+#footer .footer2 .footer_icon li{
+	width: 20%;
+    height: 70px;
+    margin-left: -30px;
+}
+#footer .footer2 .footer_icon li a{
+	color:#ffffff;
+}
+#footer .footer2 .footer_icon li p{
+    margin-top: -5px;
+}
+#footer .footer2 .footer_icon .community p{
+    margin-left: -12px;
+}

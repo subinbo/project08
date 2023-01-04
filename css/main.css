@@ -1,0 +1,456 @@
+html, body{
+    margin: 0; padding: 0; outline: 0; border: 0;
+}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+body{
+    overflow-y: scroll;
+    font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, sans-serif;}
+.cf:after{content:''; display:block; clear:both;}
+
+/* 헤더 */    
+#header{
+    background-color: #005ad5;
+    width: 100%;
+    height: 80px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+}
+#header h1{
+    margin-left: 15px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+#header .menu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* 네비게이션 */
+#nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 100;
+    display: none;
+}
+#nav .top_logo{
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#nav .close_btn{
+    position: absolute;
+	right: 10px;
+    top: 20px;
+	z-index:55;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    cursor: pointer;
+}
+#nav .nav_bg{
+    background-color: #005ad5;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+	right: 0;
+	width: 80%; height:100%;
+    z-index:50;
+}
+#nav .menu_list{
+    margin-top: 100px;
+}
+#nav .menu_list li a{
+    display:block;
+	font-size:2rem;
+	line-height:5rem;
+	text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+#nav .menu_list li a:hover{
+    color: #ffb500;
+}
+#nav .nav_bg .menu_back{
+    margin-left: 40px;
+}
+
+
+#section{
+    width: 100%;
+    height: auto;
+}
+/* 배너 */
+#banner{
+	width:100%;
+	height: 577px;
+	position: relative;
+    top: 60px;
+	overflow: hidden;
+}
+#banner #brandVisual ul li{
+	float: left;
+	position: absolute;
+	width: 100%;
+}
+#banner #brandVisual ul li a{
+	display: block;
+	width: 100%;
+	height: 40rem;
+}
+#banner #brandVisual .visual_2 {
+	background: url(../main_image/auntieanne_s1.png) no-repeat;
+    background-size: cover;
+}
+#banner #brandVisual .visual_1 {
+	background: url(../main_image/auntieanne_s2.png) no-repeat;
+    background-size: cover;
+}
+#banner #brandVisual .visual_0 {
+	background: url(../main_image/auntieanne_s3.png) no-repeat;
+    background-size: cover;
+}
+#banner #brandVisual .visual_0{left: 0;}
+#banner #brandVisual .visual_1{left: 100%;}
+#banner #brandVisual .visual_2{left: 200%;}
+
+#banner #brandVisual .visual_0 a{
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#banner #brandVisual .visual_0 a span{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#banner #brandVisual .visual_1 a{
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#banner #brandVisual .visual_1 a span{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+#banner #brandVisual .visual_2 a{
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+#banner #brandVisual .visual_2 a span{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#banner .slide_num{
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 8px;
+	left: -30px;
+    box-sizing: border-box;
+}
+#banner .slide_num li{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #005ad5;
+    float: left;
+    cursor: pointer;
+    margin-top: -10px;
+    margin: 0 3px;
+}
+#banner .slide_num li:hover{
+    background-color: #ffb500;
+}
+#banner .slide_num li:active{
+    background-color: #ffb500;
+}
+
+/* 베스트 메뉴 */
+.best{
+    position: relative;
+    overflow: hidden;
+    top: 60px;
+}
+.best h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #005ad5;
+    margin-top: 50px;
+}
+.best .best_banner{
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    height: 460px;
+    line-height: 1.8;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+.best_banner{
+    width: 100%;
+    height: 299px;
+    position: relative;
+    overflow: hidden;}
+
+.best_banner li{
+    position: absolute;
+    width: 320px;
+    height: 20rem;
+    top: 0;
+    left: 0;
+} 
+.section_arrow{
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	right: 0px;
+	top: 560px; 
+	z-index: 10;
+}
+.arrow1{height: 35px;}
+.arrow1_1{height: 35px; text-align: center;}
+.arrow1_1 img{cursor: pointer; margin: 0 20px;}
+.arrow1_1_center{margin: 0 auto;}
+
+.section_number{width: 100%; height: auto; position: absolute; top: 550px; right: 0; z-index: 5;}
+.section_number p{text-align: center; display: none;}
+.section_number p.bl{display: block;}
+.best_banner .best_menu1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+}
+.best_banner .best_menu2{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 20rem;
+}
+.best_banner .best_menu3{
+    position: absolute;
+    top: 0;
+    left: 200%;
+    width: 100%;
+    height: 20rem;
+}
+.best_banner .best_menu1{
+    background: url(../main_image/best1.png)no-repeat;
+    background-size: cover;
+}
+.best_banner .best_menu2{
+    background: url(../main_image/best2.png)no-repeat;
+    background-size: cover;
+}
+.best_banner .best_menu3{
+    background: url(../main_image/best3.png)no-repeat;
+    background-size: cover;
+} 
+
+
+
+
+/* 신메뉴 */
+.new{
+    width: 100%;
+    height: 375px;
+    background-color: #dcebf0 ;
+    margin-top: -30px;
+}
+
+.new h2{
+    font-size: 3rem;
+    color: #005ad5;
+    text-align: center;
+}
+.new  .new_text{
+    margin-top: -30px;
+}
+.new .sweet_potato{
+    display: flex;
+    justify-content: center; 
+
+}
+.new .sweet_potato h3{
+    color: #005ad5;
+    margin-top: 60px;
+}
+.new p{
+    text-align: center;
+    line-height: 2rem;
+}
+.new .new_image{
+    background: url(../main_image/sweetpotato_creamcheese_stick-list.png);
+    width: 159px;
+    height: 256px;
+    cursor: pointer;
+}
+.new .new_image:hover{
+    background: url(../main_image/sweetpotato_creamcheese_stick-list_hover.png) no-repeat;
+}
+
+/* 스토어 */
+.store{
+    height: 300px;
+    width: 100%;
+}
+.store h2{
+    font-size: 3rem;
+    color: #005ad5;
+    text-align: center;
+}
+.store p{
+    text-align: center;
+    line-height: 2rem;
+    margin-top: -30px;
+}
+.store .location{
+    width: 190px;
+    text-align: center;
+    border-bottom: 3px solid #ffb500;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.store .location img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.store .location span{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    left: 50px;
+    bottom: 0;
+}
+.store .store_button{
+    width: 160px;
+    background-color: #ffb500;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.store .store_button a{
+    color: #ffffff;
+}
+
+/* 가맹점 모집 */
+.with{
+    height: 495px;
+    width: 100%;
+    position: relative;
+}
+.with h2{
+    font-size: 2.2rem;
+    color: #005ad5;
+    top: -56px;
+    left: 5%;
+    z-index: 40;
+    position: absolute;
+}
+.with .with_image{
+    width: 90%;
+    height: 20rem;
+}
+.with p{
+    position: absolute;
+    right: 10%;
+    line-height: 30px;
+}
+.with p span{
+    font-weight: bold;
+}
+.with .with_button{
+    width: 160px;
+    background-color: #ffb500;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.with .with_button a{
+    color: #ffffff;
+}
+
+/* 푸터 */
+#footer .footer1{
+    width: 100%;
+    height: 330px;
+    background-color: #005ad5;
+    text-align: center;
+    color: #ffffff;
+    margin-top: -40px;
+}
+#footer .footer1 h1{
+    padding-top: 10px;
+}
+#footer .footer1 p{
+    font-size: 0.8rem;
+}
+#footer .footer1 address{
+    font-style: normal;
+    font-size: 0.8rem;
+}
+#footer .footer2{
+    width: 100%;
+    height: 80px;
+    background-color: #ffb500;
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+}
+#footer .footer2 .footer_icon{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content: space-around;
+    margin-top: 2px;
+}
+#footer .footer2 .footer_icon li{
+	width: 20%;
+    height: 70px;
+    margin-left: -30px;
+}
+#footer .footer2 .footer_icon li a{
+	color:#ffffff;
+}
+#footer .footer2 .footer_icon li p{
+    margin-top: -5px;
+}
+#footer .footer2 .footer_icon .community p{
+    margin-left: -12px;
+}
+
