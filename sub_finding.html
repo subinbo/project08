@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매장찾기 - 앤티앤스프레즐</title>
+    <link rel="stylesheet" href="./css/finding.css">
+
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/nav.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1><img src="./main_image/top_logo.png" alt="top_logo"></h1>
+        <img class="menu" src="./main_image/menu.png" alt="menu" width="40px" height="36px">
+    </header>
+    <nav id="nav">
+        <div class="nav_bg">
+            <div>
+                <img class="top_logo" src="./main_image/top_logo.png" alt="top_logo">
+                <img class="close_btn" src="./main_image/close.png" alt="close">
+            </div>
+            <div class="menu_list">
+                <ul>
+                    <li><a href="./sub_story.html">Auntie Anne’s</a></li>
+                    <li><a href="./sub_menu.html">Menu</a></li>
+                    <li><a href="./sub_event.html">Event</a></li>
+                    <li><a href="./sub_community.html">Community</a></li>
+                    <li><a href="./sub_franchise.html">Franchise</a></li>
+                </ul>
+            </div>
+            <img class="menu_back" src="./main_image/menu_background.png" alt="menu_background">
+        </div>
+    </nav>
+    <section id="section">
+        <h2>Finding Store</h2>
+        <p>매장찾기</p>
+        <select>
+            <option>도/시선택</option>
+            <option>서울특별시</option>
+            <option>인천광역시</option>
+            <option>대전광역시</option>
+            <option>대구광역시</option>
+            <option>부산광역시</option>
+            <option>광주광역시</option>
+            <option>울산</option>
+            <option>경기도</option>
+            <option>강원도</option>
+            <option>충청북도</option>
+            <option>충청남도</option>
+            <option>경상남도</option>
+            <option>전라북도</option>
+            <option>전라남도</option>
+            <option>세종특별자치시</option>
+            <option>제주특별자치도</option>
+        </select>
+        <select>
+            <option>구/군</option>
+            <option>강남구</option>
+            <option>강동구</option>
+            <option>강북구</option>
+            <option>강서구</option>
+            <option>관악구</option>
+            <option>광진구</option>
+            <option>구로구</option>
+            <option>금천구</option>
+            <option>노원구</option>
+            <option>도봉구</option>
+            <option>동대문구</option>
+            <option>동작구</option>
+            <option>마포구</option>
+            <option>서대문구</option>
+            <option>서초구</option>
+            <option>성동구</option>
+            <option>성북구</option>
+            <option>송파구</option>
+            <option>양천구</option>
+            <option>영등포구</option>
+            <option>용산구</option>
+            <option>은평구</option>
+            <option>종로구</option>
+            <option>중구</option>
+            <option>중랑구</option>
+        </select>
+        <div class="check">
+            <input type="checkbox" id="cb1" /> 
+            <label for="cb1"> <span></span> 배달 </label>
+            <input type="checkbox" id="cb2" /> 
+            <label for="cb2"> <span></span> 픽업 </label>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="검색어를 입력해주세요">
+            <button>검색</button>
+        </div>
+        <div class="store">
+            <h3>구미 산동점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>구미시 산동읍 신당리 1446 석세스 제1동 제1층 102호</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>070-7807-1103</span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>10:30-21:00</span>
+        </div>
+        <div class="store2">
+            <h3>보령 명천점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>충남 보령시 명천로59, 103호</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>041-931-0777 </span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>11:00-21:00</span>
+        </div>
+        <div class="store2">
+            <h3>인천 운서점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>인천광역시 중구 운서동 3099-4번지 114동 1층 133호</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>031-747-0313 </span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>11:00-22:00</span>
+        </div>
+        <div class="store2">
+            <h3>옥천휴게소 부산방향점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>충북 옥천군 옥천읍 서대구일로 265-19</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span> - </span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>08:00-20:00 </span>
+        </div>
+        <div class="store2">
+            <h3>광장점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>서울시 광진구 아차산로 537-17,1층 4호</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>02-444-7977 </span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>11:00-20:00</span>
+        </div>
+        <div class="store2">
+            <h3>제천점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>충청북도 제천시 안모산길 3(모산동),1층</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span> - </span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>11:00-21:00 </span>
+        </div>
+        <div class="store2">
+            <h3>강릉대관령휴게소 인천방향점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>강원 강릉시 성산면 연동고속도로 231</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>033-647-9970 </span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>08:00-18:30 </span>
+        </div>
+        <div class="store2">
+            <h3>이마트 천안서북점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>충남 천안시 서북구 삼성대로 20, 2층</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>010-5715-0517</span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>10:00-22:00</span>
+        </div>
+        <div class="store2">
+            <h3>춘천 ENTA 2022점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>강원 춘천시 석사동 980번지 2층 208호</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span> 033-263-4640</span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>10:00-22:00</span>
+        </div>
+        <div class="store2">
+            <h3>수원호매실점</h3>
+            <img class="location" src="./finding_image/st-pin_act.png" alt="pin_act">
+            <p>경기도 수원시 권선구 금곡로 102번길 30 1층</p>
+            <span><img src="./finding_image/tel.png" alt="tel"></span>
+            <span>031-293-1399</span>
+            <span><img src="./finding_image/watch.png" alt="watch"></span>
+            <span>10:30-21:00</span>
+        </div>
+        <div class="number">
+            <span class="na">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span><img src="./finding_image/knext-icon.jpg" alt="btn"></span>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer1">
+            <h1><img src="./main_image/ft-logo.png" alt="logo"></h1>
+            <p>(주)재원푸드</p>
+            <address>서울특별시 서초구 반포대로 22 (서초동 1451-34번지) 서초평화빌딩 10층</address>
+            <p>TEL. 02-587-0955</p>
+            <p>FAX. 02-587-0956</p>
+            <p>COPYRIGHT(C) 2020 AUNTIE ANNE”S KOREA, ALL RIGHTS RESERVED.</p>
+            <img src="./main_image/facebook 1.png" alt="facebook">
+            <img src="./main_image/instagram 1.png" alt="instagram">
+            <img src="./main_image/naver blog 1.png" alt="blog">
+        </div>
+        <div class="footer2">
+            <ul class="footer_icon">
+                <li class="community">
+                    <a href="./sub_community.html">
+                        <img src="./main_image/gnb01.png" alt="gnb01">
+                        <p>community</p>
+                    </a>
+                </li>
+                <li class="delivery">
+                    <a href="./sub_delivery.html">
+                        <img src="./main_image/gnb02.png" alt="gnb02">
+                        <p>delivery</p>
+                    </a>
+                </li>
+                <li class="main_btn">
+                    <a href="./main.html">
+                        <img src="./main_image/main_btn.png" alt="main_btn">
+                        <p></p>
+                    </a>
+                </li>
+                <li class="franchise">
+                    <a href="./sub_franchise.html">
+                        <img src="./main_image/gnb03.png" alt="gnb03">
+                        <p>franchise</p>
+                    </a>
+                </li>
+                <li class="finding">
+                    <a href="./sub_finding.html">
+                        <img src="./main_image/gnb04.png" alt="gnb04">
+                        <p>finding</p>
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
